@@ -15,12 +15,17 @@ export default async function Page({ params }: { params: { name: string } }) {
           width={500}
           height={500}
         />
-        <ul>
+        <ul className="mb-5">
           <li>身長：{pokemon.height}</li>
           <li>体重：{pokemon.weight}</li>
         </ul>
 
-        <Link href="/list">一覧に戻る</Link>
+        <Link
+          href="/"
+          className="bg-cyan-700 text-white p-2.5 rounded shadow-md transition-all duration-400 hover:bg-cyan-600"
+        >
+          一覧に戻る
+        </Link>
       </div>
     </div>
   )
